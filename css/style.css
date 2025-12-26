@@ -38,3 +38,14 @@
 .btn-earth-bg:hover {
   background-color: var(--earth-dark);
 }
+
+.home-card {
+  width: 420px;
+}
+
+.home-2nd-section {
+  width: 75%;
+
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
