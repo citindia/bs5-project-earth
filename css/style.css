@@ -1,2 +1,40 @@
-/* --color-earth-light: #74a84a;
-   --color-earth-dark: #2c541d; */
+:root {
+  --earth-light: #74a84a;
+  --earth-dark: #2c541d;
+}
+
+.tracking-025 {
+  letter-spacing: 0.25rem;
+}
+
+.tracking-050 {
+  letter-spacing: 0.5rem;
+}
+
+.tracking-100 {
+  letter-spacing: 1rem;
+}
+
+.home-hero-bg {
+  background-image: url("../assets/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-hero-section {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.text-earth-dark {
+  color: var(--earth-dark);
+}
+
+.btn-earth-bg {
+  background-color: var(--earth-light);
+}
+
+.btn-earth-bg:hover {
+  background-color: var(--earth-dark);
+}
