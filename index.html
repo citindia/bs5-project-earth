@@ -15,11 +15,11 @@
       href="css/style.css" />
     <title>Home | BS5 Project Earth</title>
   </head>
-  <body>
+  <body class="position-relative">
     <!-- Body Start -->
     <!-- Header Start -->
     <header
-      class="d-flex justify-content-between align-items-center container py-4 position-fixed start-0 top-0 end-0">
+      class="d-flex justify-content-between align-items-center container py-4 position-absolute start-0 top-0 end-0">
       <a href="index.html">
         <img
           src="assets/logo-96x19.png"
@@ -29,22 +29,22 @@
       <nav class="d-flex align-items-center gap-5 fs-6 fw-medium">
         <a
           href="index.html"
-          class="text-uppercase text-decoration-none text-dark"
+          class="text-uppercase text-decoration-none text-earth-dark"
           >Home</a
         >
         <a
           href="about.html"
-          class="text-uppercase text-decoration-none text-dark">
+          class="text-uppercase text-decoration-none link-earth-dark">
           About</a
         >
         <a
           href="services.html"
-          class="text-uppercase text-decoration-none text-dark"
+          class="text-uppercase text-decoration-none link-earth-dark"
           >Services</a
         >
         <a
           href="contact.html"
-          class="text-uppercase text-decoration-none text-dark"
+          class="text-uppercase text-decoration-none link-earth-dark"
           >Contact</a
         >
       </nav>
@@ -73,7 +73,7 @@
       <!-- Hero Section End -->
 
       <!-- 2nd Section Start -->
-      <section class="row justify-content-between home-2nd-section mx-auto">
+      <section class="row justify-content-between home-section-gapping mx-auto">
         <div class="d-flex flex-column gap-2 home-card">
           <img
             src="assets/service-1-min.jpg"
@@ -114,11 +114,83 @@
         </div>
       </section>
       <!-- 2nd Section End -->
+
+      <!-- 3rd Section Start -->
+      <section class="row justify-content-between home-section-gapping mx-auto">
+        <div class="col-5 d-flex flex-column gap-3 justify-content-center">
+          <div class="fs-1 fw-bold text-uppercase">About us</div>
+          <div class="">
+            I made it so it is super easy to update and so that it flows
+            perfectly with my tutorials. Lots of love and hundreds of hours went
+            into making it. I hope you love it as much as I do. I wish you the
+            best of luck with your business, enjoy the adventure.
+          </div>
+        </div>
+
+        <div class="col-5">
+          <img
+            src="assets/our-mission-min-1024x762.jpg"
+            alt="Our-Mission-min-1024x762.jpg"
+            class="img-fluid" />
+        </div>
+      </section>
+      <!-- 3rd Section End -->
+
+      <!-- 4th Section Start -->
+      <section class="home-4th-bg d-flex flex-column align-items-center gap-5">
+        <div
+          class="display-4 fw-semibold text-center text-uppercase text-earth-dark tracking-050">
+          Talk to us
+        </div>
+        <div class="text-center fs-5">
+          Have any questions? We are always open to talk about your business,
+          <br />
+          new projects, creative opportunities and how we can help you.
+        </div>
+        <a
+          href=""
+          class="text-decoration-none btn-earth-bg text-white tracking-025 py-2 px-5 fw-semibold"
+          >Get In Touch</a
+        >
+      </section>
+      <!-- 4th Section End -->
     </main>
     <!-- Main End -->
 
     <!-- Footer Start -->
-    <footer></footer>
+    <footer
+      class="d-flex justify-content-between align-items-center px-3 footer-section-gapping mx-auto">
+      <div class="d-flex gap-3">
+        <a
+          href="index.html"
+          class="text-decoration-none text-earth-dark"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="text-decoration-none link-earth-dark">
+          About</a
+        >
+        <a
+          href="services.html"
+          class="text-decoration-none link-earth-dark"
+          >Services</a
+        >
+        <a
+          href="contact.html"
+          class="text-decoration-none link-earth-dark"
+          >Contact</a
+        >
+      </div>
+
+      <a href="index.html">
+        <img
+          src="assets/Logo-96x19.png"
+          alt="logo" />
+      </a>
+
+      <div class="">©2025 Earth. All right reserved.</div>
+    </footer>
     <!-- Footer End -->
     <!-- Body End -->
 
