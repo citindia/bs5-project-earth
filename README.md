@@ -44,7 +44,7 @@ bs5-project-earth/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/bs5-project-earth.git
+   git clone https://github.com/citindia/bs5-project-earth.git
    ```
 
 2. Navigate to the project directory:
