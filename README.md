@@ -98,7 +98,7 @@ cd bs5-project-earth
 - Professional color scheme and typography
 - Interactive hover states and micro-interactions
 
-## � Preview
+## 📸 Preview
 
 ### Home Page
 
