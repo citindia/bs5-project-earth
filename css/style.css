@@ -1,6 +1,26 @@
+/* CSS Custom Properties */
 :root {
+  /* Colors variables */
   --earth-light: #74a84a;
   --earth-dark: #2c541d;
+
+  /* Spacing variables */
+  --spacing-xs: 35px;
+  --spacing-sm: 100px;
+  --spacing-md: 160px;
+  --spacing-lg: 280px;
+  --spacing-xl: 350px;
+
+  /* Layout variables */
+  --content-width: 75%;
+  --card-max-width: 430px;
+
+  /* Hero images */
+  --hero-home: url("../assets/banner.jpg");
+  --hero-about: url("../assets/about-banner.jpg");
+  --hero-services: url("../assets/call-to-action.jpg");
+  --hero-contact: url("../assets/contact-banner.jpg");
+  --hero-cta: url("../assets/talk-to-us.jpg");
 }
 
 .tracking-025 {
@@ -15,20 +35,48 @@
   letter-spacing: 1rem;
 }
 
-.home-hero-bg {
-  background-image: url("../assets/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero-bg {
+  background: center/cover no-repeat;
 }
 
-.home-hero-section {
-  padding-top: 350px;
-  padding-bottom: 350px;
+.home-hero-bg {
+  background-image: var(--hero-home);
+}
+
+.about-hero-bg {
+  background-image: var(--hero-about);
+}
+
+.services-hero-bg {
+  background-image: var(--hero-services);
+}
+
+.contact-hero-bg {
+  background-image: var(--hero-contact);
+}
+
+.cta-hero-bg {
+  background-image: var(--hero-cta);
+}
+
+.hero-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.hero-section-sm {
+  padding: var(--spacing-lg) 0;
+}
+
+.cta-section {
+  padding: var(--spacing-md) 0;
 }
 
 .text-earth-dark {
   color: var(--earth-dark);
+}
+
+.text-earth-light {
+  color: var(--earth-light);
 }
 
 .link-earth-dark {
@@ -39,39 +87,73 @@
   color: var(--earth-dark);
 }
 
-.btn-earth-bg {
-  background-color: var(--earth-light);
+.btn-earth {
+  background: var(--earth-light);
+  color: white;
 }
 
-.btn-earth-bg:hover {
-  background-color: var(--earth-dark);
+.btn-earth:hover {
+  background: var(--earth-dark);
 }
 
-.home-card {
+.section-content {
+  width: var(--content-width);
+  padding: var(--spacing-sm) 0;
+}
+
+.footer-content {
+  width: var(--content-width);
+  padding: var(--spacing-xs) 0;
+}
+
+.card-fixed {
   width: 100%;
-  max-width: 430px;
+  max-width: var(--card-max-width);
 }
 
-.home-section-gapping {
-  width: 75%;
-
-  padding-top: 100px;
-  padding-bottom: 100px;
+.icon-border {
+  border: 1px solid var(--earth-light);
 }
 
-.home-4th-bg {
-  background-image: url("../assets/call-to-action.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  padding-top: 160px;
-  padding-bottom: 160px;
+.contact-follow-section {
+  margin-top: -16px;
+  padding-left: 72px;
 }
 
-.footer-section-gapping {
-  width: 75%;
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: var(--spacing-lg) 0;
+  }
 
-  padding-top: 35px;
-  padding-bottom: 35px;
+  .hero-section-sm {
+    padding: var(--spacing-md) 0;
+  }
+
+  .cta-section {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .section-content {
+    width: 90%;
+    padding: var(--spacing-xs) 0;
+  }
+
+  .footer-content {
+    width: 95%;
+    padding: var(--spacing-xs) 0;
+  }
+
+  .contact-follow-section {
+    margin-top: -16px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-content,
+  .footer-content {
+    width: 100%;
+    padding: var(--spacing-xs) var(--spacing-xs);
+  }
 }
